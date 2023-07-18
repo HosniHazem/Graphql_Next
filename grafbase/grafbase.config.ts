@@ -27,15 +27,15 @@ const Project = g.model('Project', {
   rules.private().create().delete().update()
 })
 
-/* const jwt = auth.JWT({
+const jwt = auth.JWT({
   issuer: 'grafbase',
-  secret:  g.env('NEXTAUTH_SECRET')
-}) */
+  secret:  'pwj7qaZBG2YdpiQgVVc1a0I8OnqoeqbijITdUcqBgZM='
+})
 
 export default config({
   schema: g,
- /*  auth: {
+  auth: {
     providers: [jwt],
     rules: (rules) => rules.private()
-  }, */
+  },
 })
